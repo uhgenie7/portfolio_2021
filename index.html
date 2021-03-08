@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="portfolio for hyejin" />
+    <meta name="author" content="hyejin" />
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png" />
+    <!-- awesome font -->
+    <script
+      src="https://kit.fontawesome.com/4d645dbcdc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fullpage -->
+    <link rel="stylesheet" href="./css/fullpage/fullpage.css" />
+    <!-- <link rel="stylesheet" href="./css/fullpage/examples.css" /> -->
+    <!-- css file -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>UHJ PORTFOLIO</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <h1 class="logo">
+          <a href="#">
+            <i class="fas fa-user-circle 9x"></i>
+          </a>
+        </h1>
+        <nav class="menu">
+          <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div>
+          <!-- <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PORTFOLIO</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul> -->
+        </nav>
+      </header>
+      <main class="main">
+        <!-- full page start -->
+        <div id="fullpage">
+          <div class="section main_section" id="section0">
+            <h2>HYEJIN'S PORTFOLIO</h2>
+            <div class="scroll-downs">
+              <div class="mousey">
+                <div class="scroller"></div>
+              </div>
+            </div>
+          </div>
+          <!-- section 0 end -->
+          <div class="section" id="section1">
+            <h2>HYEJIN'S PORTFOLIO</h2>
+          </div>
+          <!-- section 1 end -->
+          <div class="section" id="section2">
+            <h2>HYEJIN'S PORTFOLIO</h2>
+          </div>
+          <!-- section 2 end -->
+          <div class="section" id="section3">
+            <h2>HYEJIN'S PORTFOLIO</h2>
+          </div>
+          <!-- section 3 end -->
+        </div>
+      </main>
+    </div>
+    <footer></footer>
+    <!-- </div> -->
+    <!-- jquery script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- full page javascript -->
+    <script src="./js/fullpage/fullpage.js"></script>
+    <!-- <script src="./js/fullpage/examples.js"></script> -->
+    <script type="text/javascript">
+      var myFullpage = new fullpage("#fullpage", {
+        anchors: ["firstPage", "secondPage", "3rdPage"],
+        navigation: true,
+        navigationPosition: "right",
+      });
+    </script>
+    <!-- custom js -->
+  </body>
+</html>
