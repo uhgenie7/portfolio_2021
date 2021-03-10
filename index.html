@@ -15,11 +15,8 @@
     ></script>
     <!-- fullpage css -->
     <link rel="stylesheet" href="./css/fullpage/fullpage.css" />
-    <!-- swiper cdn -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="./css/swiper/swiper.min.css" />
     <!-- css file -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>UHJ PORTFOLIO</title>
@@ -33,23 +30,25 @@
           </a>
         </h1>
         <nav class="menu">
-          <div class="menu-toggle">
+          <div class="menu_toggle">
             <i class="fas fa-bars"></i>
             <i class="fas fa-times"></i>
           </div>
-          <!-- <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul> -->
+          <div class="menu_container">
+            <ul>
+              <li><a href="#" class="menu_item">HOME</a></li>
+              <li><a href="#" class="menu_item active">PORTFOLIO</a></li>
+              <li><a href="#" class="menu_item">ABOUT ME</a></li>
+              <li><a href="#" class="menu_item">CONTACT</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main class="main">
         <!-- full page start -->
         <div id="fullpage">
           <div class="section main_section" id="section0">
-            <h2 class="main_title">HYEJIN'S PORTFOLIO</h2>
+            <h2 class="main_title">HYEJIN'S PORTFOLIO<br />PAGE</h2>
             <div class="scroll-downs">
               <div class="mousey">
                 <div class="scroller"></div>
@@ -74,14 +73,6 @@
                     <li><img src="./img/stack/jq_icon.png" alt="jq_icon" /></li>
                   </ul>
                 </div>
-                <!-- <div class="content_Palettes">
-                  <ul class="palette_items">
-                    <li class="palette_item"></li>
-                    <li class="palette_item"></li>
-                    <li class="palette_item"></li>
-                    <li class="palette_item"></li>
-                  </ul>
-                </div> -->
                 <div class="content_lists">
                   <ul class="content_ul">
                     <li>PHP를 이용한 관리자 로그인 기능</li>
@@ -107,18 +98,145 @@
           </div>
           <!-- section 1 end -->
           <div class="section" id="section2">
-            <h2>HYEJIN'S PORTFOLIO</h2>
+            <div class="contents">
+              <div class="contents_left">
+                <h2 class="content_title">Movie API</h2>
+                <h3 class="content_cate">Develpment</h3>
+                <div class="content_imgs">
+                  <ul>
+                    <li>
+                      <img src="./img/stack/html_icon.png" alt="html_icon" />
+                    </li>
+                    <li>
+                      <img src="./img/stack/css_icon.png" alt="css_icon" />
+                    </li>
+                    <li><img src="./img/stack/js_icon.png" alt="js_icon" /></li>
+                    <li><img src="./img/stack/jq_icon.png" alt="jq_icon" /></li>
+                    <li>
+                      <img src="./img/stack/json_icon.png" alt="json_icon" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="content_lists">
+                  <ul class="content_ul">
+                    <li>네이버 REST API를 이용한 영화 검색 기능</li>
+                    <li>AJAX를 이용한 외국 영화 검색 기능</li>
+                    <li>장르별 영화 탭 기능</li>
+                    <li>JSON을 이용한 영화 세부 정보 표시</li>
+                  </ul>
+                </div>
+                <div class="content_buttons">
+                  <a href="#" target="_blank">VIEW WEBSITE</a>
+                  <a href="#" target="_blank">REQUIREMENTS</a>
+                  <a href="#" target="_blank">GIT HUBE</a>
+                </div>
+              </div>
+              <div class="contents_right">
+                <img
+                  src="./img/website/port_website2.png"
+                  alt="MOVIE_API_WEBSITE"
+                  class="content_img"
+                />
+              </div>
+            </div>
           </div>
           <!-- section 2 end -->
           <div class="section" id="section3">
-            <h2>HYEJIN'S PORTFOLIO</h2>
+            <div class="contents">
+              <div class="contents_left">
+                <h2 class="content_title">JS_ToDoList</h2>
+                <h3 class="content_cate">Develpment</h3>
+                <div class="content_imgs">
+                  <ul>
+                    <li>
+                      <img src="./img/stack/html_icon.png" alt="html_icon" />
+                    </li>
+                    <li>
+                      <img src="./img/stack/css_icon.png" alt="css_icon" />
+                    </li>
+                    <li><img src="./img/stack/js_icon.png" alt="js_icon" /></li>
+                  </ul>
+                </div>
+                <div class="content_lists">
+                  <ul class="content_ul">
+                    <li>순수 자바스크립트로만 구현된 사이트</li>
+                    <li>
+                      LocalStorge를 이용한 저장 기능
+                      <ul class="depth2">
+                        <li>이름 저장</li>
+                        <li>할 일 저장</li>
+                        <li>끝낸 일 저장</li>
+                      </ul>
+                    </li>
+                    <li>위치 API를 이용한 날씨 API 및 위치 출력</li>
+                    <li>Math random 메서드를 활용한 랜덤 배경 기능</li>
+                  </ul>
+                </div>
+                <div class="content_buttons">
+                  <a href="#" target="_blank">VIEW WEBSITE</a>
+                  <a href="#" target="_blank">REQUIREMENTS</a>
+                  <a href="#" target="_blank">GIT HUBE</a>
+                </div>
+              </div>
+              <div class="contents_right">
+                <img
+                  src="./img/website/port_website3.png"
+                  alt="todolist"
+                  class="content_img"
+                />
+              </div>
+            </div>
           </div>
           <!-- section 3 end -->
           <div class="section" id="section4">
             <div class="contents">
               <div class="contents_left">
+                <h2 class="content_title">GOLD PROJECT</h2>
+                <h3 class="content_cate">Clone Site</h3>
+                <div class="content_imgs">
+                  <ul>
+                    <li>
+                      <img src="./img/stack/php_icon.png" alt="php_icon" />
+                    </li>
+                    <li>
+                      <img src="./img/stack/css_icon.png" alt="css_icon" />
+                    </li>
+                    <li><img src="./img/stack/js_icon.png" alt="js_icon" /></li>
+                    <li><img src="./img/stack/jq_icon.png" alt="jq_icon" /></li>
+                    <li>
+                      <img src="./img/stack/json_icon.png" alt="json_icon" />
+                    </li>
+                  </ul>
+                </div>
+                <div class="content_lists">
+                  <ul class="content_ul">
+                    <li>MARIADB를 이용한 데이터베이스 기능</li>
+                    <li>회원가입, 로그인, 로그아웃 기능</li>
+                    <li>관리자 페이지 기능</li>
+                    <li>검색 기능</li>
+                    <li>게시글 작성 기능</li>
+                  </ul>
+                </div>
+                <div class="content_buttons">
+                  <a href="#" target="_blank">VIEW WEBSITE</a>
+                  <a href="#" target="_blank">REQUIREMENTS</a>
+                  <a href="#" target="_blank">GIT HUBE</a>
+                </div>
+              </div>
+              <div class="contents_right">
+                <img
+                  src="./img/website/port_website3.png"
+                  alt="todolist"
+                  class="content_img"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- section 4 end -->
+          <div class="section" id="section5">
+            <div class="contents">
+              <div class="contents_left">
                 <h2 class="content_title">MORE PORTFOLIO?</h2>
-                <h3 class="content_cate">more. . .</h3>
                 <div class="content_imgs">
                   <ul>
                     <li>
@@ -132,31 +250,46 @@
                     </li>
                     <li><img src="./img/stack/js_icon.png" alt="js_icon" /></li>
                     <li><img src="./img/stack/jq_icon.png" alt="jq_icon" /></li>
+                    <li>
+                      <img src="./img/stack/file_icon.png" alt="file_icon" />
+                    </li>
                   </ul>
                 </div>
-                <div class="content_list">
-                  <ul class="content_ul">
-                    <li>E-MAIL: uhj1993@naver.com</li>
+                <div class="contact_list">
+                  <ul class="contact_ul">
                     <li>
-                      <a href="#" target="_blank">
-                        WEBSITE: uhj199@dothome.co.kr</a
-                      >
+                      <button class="contact email" value="uhj1993@naver.com">
+                        <i class="far fa-envelope"></i>
+                        <div class="tooltip-content">
+                          <p>E-Mail</p>
+                        </div>
+                      </button>
                     </li>
                     <li>
-                      <a href="https://jineecode.tistory.com/" target="_blank">
+                      <a
+                        href="https://jineecode.tistory.com/"
+                        target="_blank"
+                        class="contact"
+                      >
                         <img src="./img/tistory.png" alt="tech_blog" />
+                        <div class="tooltip-content">
+                          <p>BLOG</p>
+                        </div>
                       </a>
                     </li>
                     <li>
-                      <a href="https://github.com/uhj1993" target="_blank">
-                        <img src="./img/github.png" alt="github"
-                      /></a>
+                      <a
+                        href="https://github.com/uhj1993"
+                        target="_blank"
+                        class="contact"
+                      >
+                        <img src="./img/github.png" alt="github" />
+                        <div class="tooltip-content">
+                          <p>Git-Hub</p>
+                        </div></a
+                      >
                     </li>
                   </ul>
-                </div>
-                <div class="content_buttons">
-                  <a href="#" target="_blank">VIEW WEBSITE</a>
-                  <a href="#" target="_blank">GIT HUBE</a>
                 </div>
               </div>
               <div class="contents_right">
@@ -168,17 +301,17 @@
                     <div class="swiper-slide">
                       <div class="port_etc">
                         <div class="port_img">
-                          <img src="./img/website/pu_main4.png" alt="" />
+                          <img src="./img/website/port_website4.jpg" alt="" />
                         </div>
                         <div class="port_contents">
-                          <h2 class="port_title">My Schedule</h2>
-                          <h3 class="port_cate">Develpment</h3>
+                          <h2 class="port_title">GODIVA</h2>
+                          <h3 class="port_cate">Clone site</h3>
                           <div class="port_imgs">
                             <ul>
                               <li class="port_imglist">
                                 <img
-                                  src="./img/stack/php_icon.png"
-                                  alt="php_icon"
+                                  src="./img/stack/html_icon.png"
+                                  alt="html_icon"
                                 />
                               </li>
                               <li class="port_imglist">
@@ -193,22 +326,14 @@
                                   alt="js_icon"
                                 />
                               </li>
-                              <li class="port_imglist">
-                                <img
-                                  src="./img/stack/jq_icon.png"
-                                  alt="jq_icon"
-                                />
-                              </li>
                             </ul>
                           </div>
                           <div class="port_lists">
                             <ul class="port_ul">
-                              <li>PHP를 이용한 관리자 로그인 기능</li>
-                              <li>
-                                JSON을 이용한 전체 그래프 진행률 실시간 변경
-                              </li>
-                              <li>MARIADB를 이용한 데이터베이스 출력 기능</li>
-                              <li>제목 클릭 시 제목 및 내용 수정 기능</li>
+                              <li>기존 웹사이트 리뉴얼</li>
+                              <li>순수 자바스크립트로만 구현</li>
+                              <li>swiper 플러그인 사용</li>
+                              <li>자바스크립트를 이해한 메가박스 구현</li>
                             </ul>
                           </div>
                           <div class="port_buttons">
@@ -327,19 +452,17 @@
                   </div>
                   <!-- If we need pagination -->
                   <div class="swiper-pagination"></div>
-
                   <!-- If we need navigation buttons -->
-                  <div class="swiper-button-prev">
+                  <div class="swiper-button-prev nav_prev">
                     <img src="./img/prev.png" alt="" />
                   </div>
-                  <div class="swiper-button-next">
+                  <div class="swiper-button-next nav_next">
                     <img src="./img/next.png" alt="" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- section 4 end -->
         </div>
       </main>
     </div>
@@ -352,5 +475,7 @@
     <!-- swiper javascript -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/swiper/swiper.js"></script>
+    <!-- custom javascript -->
+    <script src="./js/custom.js"></script>
   </body>
 </html>
