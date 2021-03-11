@@ -1,5 +1,6 @@
 
-        $("#fullpage").fullpage({
+$("#fullpage").fullpage({
+          anchors:['top', 'first', 'second', 'third', 'fourth', 'fifth','contact'],
           verticalCentered: false,
           css3: true,
           navigation: true,
