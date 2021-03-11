@@ -1,6 +1,6 @@
 /* font import */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 /* reset */
 * {
@@ -49,18 +49,18 @@ body {
   font-size: 26px;
 }
 
-.header .logo i {
+.header .user i {
   cursor: pointer;
   color: #fdfdfd;
   font-size: 50px;
 }
 
 /* main container and scroll animation */
-.main_section {
+.portfolio_section {
   position: relative;
 }
 
-.main_section .main_title {
+.portfolio_section .portfolio_title {
   font-size: 72px;
   position: absolute;
   top: 50%;
@@ -180,7 +180,7 @@ body {
   display: block;
   transition: all 0.4s;
   z-index: -1;
-  padding: 6rem 4rem;
+  padding: 10rem 4rem;
 }
 
 .menu_container.show {
@@ -261,21 +261,13 @@ body {
 
 .contents_left .content_imgs ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .contents_left .content_lists,
 .port_lists {
   font-family: "Noto Sans KR", sans-serif;
   font-weight: 500;
-}
-
-.contact_ul {
-  display: flex;
-  align-items: center;
-}
-
-.contact_ul li {
-  margin-right: 20px;
 }
 
 .contents_left .content_lists .content_ul,
@@ -286,18 +278,6 @@ body {
 
 .content_ul .depth2 {
   padding-left: 10px;
-}
-
-.contact_list .email {
-  background: none;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.contact_ul .far {
-  font-size: 60px;
-  color: #fdfdfd;
 }
 
 .contents_left .content_buttons {
@@ -313,7 +293,7 @@ body {
   color: #fdfdfd;
   padding: 15px;
   border-radius: 0.25rem;
-  margin-right: 5px;
+  margin: 5px;
   transition: all 0.4s;
 }
 
@@ -352,15 +332,6 @@ body {
   content: "none";
 }
 
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-}
-
-.swiper-pagination-bullet-active {
-  color: #0657a2;
-}
-
 .port_etc {
   width: 100%;
   height: 100%;
@@ -377,7 +348,7 @@ body {
 }
 
 .port_etc .port_img img {
-  width: 100%;
+  height: 100%;
   transition: all 0.4s;
 }
 
@@ -484,4 +455,121 @@ body {
 
 .contact:hover .tooltip-content {
   visibility: visible;
+}
+
+/* contact page */
+.contact_section {
+  position: relative;
+}
+
+.contact_section .contact_container {
+  font-size: 72px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: letter 1s forwards;
+}
+
+.contact_title {
+  font-size: 72px;
+  text-align: center;
+}
+
+.contact_ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_ul li {
+  margin-right: 20px;
+}
+
+.contact_list .email {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.contact_ul .far {
+  font-size: 60px;
+  color: #fdfdfd;
+}
+
+.contact {
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+/* pop up */
+.about {
+  width: 70%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(../img/info1.jpg) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  box-shadow: 30px 40px 40px rgb(0 0 0 / 60%);
+}
+
+.about.show {
+  display: flex;
+  animation: fadeIn 0.4s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.about .user_name {
+  font-size: 3rem;
+}
+
+.stack {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #fdfdfd;
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.stack .fab {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.about .fa-times {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  color: #fdfdfd;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.user_name {
+  color: #fdfdfd;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.content_title.mob {
+  display: none;
 }
