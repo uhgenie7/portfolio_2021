@@ -19,12 +19,14 @@
     <link rel="stylesheet" href="./css/swiper/swiper.min.css" />
     <!-- css file -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+
     <title>UHJ PORTFOLIO</title>
   </head>
   <body>
     <div class="wrap">
       <header class="header">
-        <h1 class="logo">
+        <h1 class="user">
           <a href="#">
             <i class="fas fa-user-circle"></i>
           </a>
@@ -32,27 +34,64 @@
         <nav class="menu">
           <div class="menu_toggle">
             <i class="fas fa-bars"></i>
-            <i class="fas fa-times"></i>
+            <i class="fas fa-times menu_times"></i>
           </div>
           <div class="menu_container">
             <ul>
-              <li><a href="#" class="menu_item">HOME</a></li>
-              <li><a href="#" class="menu_item active">PORTFOLIO</a></li>
-              <li><a href="#" class="menu_item">ABOUT ME</a></li>
-              <li><a href="#" class="menu_item">CONTACT</a></li>
+              <li><a href="#top" class="menu_item active">PORTFOLIO</a></li>
+              <li><a href="#contact" class="menu_item">CONTACT</a></li>
             </ul>
           </div>
         </nav>
       </header>
-      <main class="main">
+      <div class="about">
+        <div class="profile">
+          <img src="./img/icon-people-circle.svg" alt="user" />
+        </div>
+        <div class="about_icon">
+          <i class="fas fa-times about_times"></i>
+        </div>
+        <!-- <div class="more_icon">
+          <i class="fas fa-times"></i>
+        </div> -->
+        <!-- 더보기 링크 기능 추후 추가 -->
+        <h2 class="user_name">엄혜진</h2>
+        <div class="stack">
+          <div class="stack_html">
+            <img src="./img/stack/html_icon.png" alt="html_icon" />
+
+            <ul>
+              <li>웹 표준 준수</li>
+              <li>시맨틱 태그 활용</li>
+            </ul>
+          </div>
+          <div class="stack_css">
+            <img src="./img/stack/css_icon.png" alt="css_icon" />
+            <ul>
+              <li>반응형 작업</li>
+              <li>웹 접근성을 고려한 IR 기법</li>
+            </ul>
+          </div>
+          <div class="stack_js">
+            <img src="./img/stack/js_icon.png" alt="js_icon" />
+            <ul>
+              <li>VanilaJS 활용</li>
+              <li>jquery 활용</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="portfolio">
         <!-- full page start -->
         <div id="fullpage">
-          <div class="section main_section" id="section0">
-            <h2 class="main_title">HYEJIN'S PORTFOLIO<br />PAGE</h2>
+          <div class="section portfolio_section" id="section0">
+            <h2 class="portfolio_title">HYEJIN'S PORTFOLIO<br />PAGE</h2>
             <div class="scroll-downs">
-              <div class="mousey">
-                <div class="scroller"></div>
-              </div>
+              <a href="#first">
+                <div class="mousey">
+                  <div class="scroller"></div>
+                </div>
+              </a>
             </div>
           </div>
           <!-- section 0 end -->
@@ -144,7 +183,7 @@
           <div class="section" id="section3">
             <div class="contents">
               <div class="contents_left">
-                <h2 class="content_title">JS_ToDoList</h2>
+                <h2 class="content_title">ToDo List</h2>
                 <h3 class="content_cate">Develpment</h3>
                 <div class="content_imgs">
                   <ul>
@@ -235,8 +274,8 @@
           <!-- section 4 end -->
           <div class="section" id="section5">
             <div class="contents">
-              <div class="contents_left">
-                <h2 class="content_title">MORE PORTFOLIO?</h2>
+              <!-- <div class="contents_left pc">
+                <h2 class="content_title">MORE...?</h2>
                 <div class="content_imgs">
                   <ul>
                     <li>
@@ -255,43 +294,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="contact_list">
-                  <ul class="contact_ul">
-                    <li>
-                      <button class="contact email" value="uhj1993@naver.com">
-                        <i class="far fa-envelope"></i>
-                        <div class="tooltip-content">
-                          <p>E-Mail</p>
-                        </div>
-                      </button>
-                    </li>
-                    <li>
-                      <a
-                        href="https://jineecode.tistory.com/"
-                        target="_blank"
-                        class="contact"
-                      >
-                        <img src="./img/tistory.png" alt="tech_blog" />
-                        <div class="tooltip-content">
-                          <p>BLOG</p>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://github.com/uhj1993"
-                        target="_blank"
-                        class="contact"
-                      >
-                        <img src="./img/github.png" alt="github" />
-                        <div class="tooltip-content">
-                          <p>Git-Hub</p>
-                        </div></a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              </div> -->
               <div class="contents_right">
                 <!-- Slider main container -->
                 <div class="swiper-container">
@@ -382,9 +385,7 @@
                           <div class="port_lists">
                             <ul class="port_ul">
                               <li>PHP를 이용한 관리자 로그인 기능</li>
-                              <li>
-                                JSON을 이용한 전체 그래프 진행률 실시간 변경
-                              </li>
+                              <li>JSON을 이용한 그래프 진행률 실시간 변경</li>
                               <li>MARIADB를 이용한 데이터베이스 출력 기능</li>
                               <li>제목 클릭 시 제목 및 내용 수정 기능</li>
                             </ul>
@@ -450,8 +451,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- If we need pagination -->
-                  <div class="swiper-pagination"></div>
                   <!-- If we need navigation buttons -->
                   <div class="swiper-button-prev nav_prev">
                     <img src="./img/prev.png" alt="" />
@@ -463,10 +462,52 @@
               </div>
             </div>
           </div>
+          <!-- section 5 end -->
+          <div class="section contact_section" id="section6">
+            <div class="contact_container">
+              <h2 class="contact_title">CONTACT ME</h2>
+              <div class="contact_list">
+                <ul class="contact_ul">
+                  <li>
+                    <button class="contact email" value="uhj1993@naver.com">
+                      <i class="far fa-envelope"></i>
+                      <div class="tooltip-content">
+                        <p>E-Mail</p>
+                      </div>
+                    </button>
+                  </li>
+                  <li>
+                    <a
+                      href="https://jineecode.tistory.com/"
+                      target="_blank"
+                      class="contact"
+                    >
+                      <img src="./img/tistory.png" alt="tech_blog" />
+                      <div class="tooltip-content">
+                        <p>BLOG</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://github.com/uhj1993"
+                      target="_blank"
+                      class="contact"
+                    >
+                      <img src="./img/github.png" alt="github" />
+                      <div class="tooltip-content">
+                        <p>Git-Hub</p>
+                      </div></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
+      </section>
+      <section class="contact"></section>
     </div>
-    <footer></footer>
     <!-- jquery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- fullpage javascript -->
