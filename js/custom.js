@@ -1,6 +1,8 @@
+// menu toggler
+
 const menuToggler = document.querySelector('.menu_toggle');
 const menuOpen = menuToggler.querySelector('.fa-bars');
-const menuClose = menuToggler.querySelector('.fa-times');
+const menuClose = menuToggler.querySelector('.menu_times');
 const menuContainer = document.querySelector('.menu_container');
 
 menuOpen.addEventListener('click', (e) => {
@@ -23,7 +25,7 @@ document.addEventListener("click", function () {
   menuOpen.style.display = "block";
 });
 
-// clipboard
+// email clipboard
 const eMail = document.querySelector('.email');
 eMail.addEventListener("click", () => {
   let dummy = document.createElement('textarea');
@@ -34,3 +36,34 @@ eMail.addEventListener("click", () => {
   document.body.removeChild(dummy);
   alert('복사되었습니다.');
 });
+
+// pop up //
+const userIcon=document.querySelector(".user");
+const aboutModal = document.querySelector(".about");
+const aboutTimes = document.querySelector(".about_times");
+
+// open
+userIcon.addEventListener("click", (e) => {
+  e.stopPropagation();
+  aboutModal.classList.add("show");
+});
+
+// times close x
+aboutTimes.addEventListener("click", (e) => {
+  e.stopPropagation();
+  aboutModal.classList.remove("show");
+});
+
+// background close
+document.addEventListener("click", (e) => {
+  if (!e.this) {
+    aboutModal.classList.remove("show");
+  }
+});
+
+// contents click NOT close
+aboutModal.addEventListener("click", (e) => {
+  e.preventDefault();
+  e.stopPropagation();
+});
+
