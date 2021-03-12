@@ -67,3 +67,33 @@ aboutModal.addEventListener("click", (e) => {
   e.stopPropagation();
 });
 
+// filter
+const workBtnContainer = document.querySelector('.more_btns');
+const projectContainer = document.querySelector('.more_container');
+const projects = document.querySelectorAll('.more_items');
+let currentMenu;
+
+workBtnContainer.addEventListener('click', (e) => {
+   if (currentMenu) {
+    currentMenu.classList.remove("active");
+  } e.target.classList.add("active");
+  currentMenu = e.target;
+
+    const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+    if (filter == null) {
+        return;
+    }
+    // projectContainer.classList.add('active');
+
+    setTimeout(() => {
+        projects.forEach((project) => {
+            if (filter === '*' || filter === project.dataset.type) {
+              project.classList.remove('invisible');
+            } else {
+                project.classList.add('invisible');
+            }
+        });
+        // projectContainer.classList.remove('active');
+    }, 300);
+
+});
