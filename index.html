@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -38,56 +38,41 @@
           </div>
           <div class="menu_container">
             <ul>
-              <li><a href="#top" class="menu_item active">PORTFOLIO</a></li>
+              <li><a href="#home" class="menu_item">HOME</a></li>
+              <li><a href="#skills" class="menu_item">SKILLS</a></li>
+              <li><a href="#works" class="menu_item active">WORKS</a></li>
               <li><a href="#contact" class="menu_item">CONTACT</a></li>
             </ul>
           </div>
         </nav>
       </header>
-      <div class="about">
+      <section class="about">
         <div class="profile">
           <img src="./img/icon-people-circle.svg" alt="user" />
         </div>
         <div class="about_icon">
           <i class="fas fa-times about_times"></i>
         </div>
-        <!-- <div class="more_icon">
+        <div class="more_icon">
           <i class="fas fa-times"></i>
-        </div> -->
-        <!-- 더보기 링크 기능 추후 추가 -->
-        <h2 class="user_name">엄혜진</h2>
-        <div class="stack">
-          <div class="stack_html">
-            <img src="./img/stack/html_icon.png" alt="html_icon" />
-
-            <ul>
-              <li>웹 표준 준수</li>
-              <li>시맨틱 태그 활용</li>
-            </ul>
-          </div>
-          <div class="stack_css">
-            <img src="./img/stack/css_icon.png" alt="css_icon" />
-            <ul>
-              <li>반응형 작업</li>
-              <li>웹 접근성을 고려한 IR 기법</li>
-            </ul>
-          </div>
-          <div class="stack_js">
-            <img src="./img/stack/js_icon.png" alt="js_icon" />
-            <ul>
-              <li>VanilaJS 활용</li>
-              <li>jquery 활용</li>
-            </ul>
-          </div>
         </div>
-      </div>
-      <section class="portfolio">
+        <h2 class="user__name">엄혜진</h2>
+        <p class="user__p">
+          반갑습니다. 개발을 좋아하는 웹 퍼블리셔 엄혜진입니다.<br>
+          저는 시맨틱 마크업을 고려하고 정렬된 스타일, JS를 활용한 동적인 기능 구현을 좋아합니다.<br><br>
+          저는 웹에 관심이 많은 만큼 개발을 즐기고 열정을 아끼지 않는 인재랍니다.<br>
+          요즈음엔 JS 최신 문법인 Module과 Class를 이용한 분할 관리에 관심이 많습니다. <br>당연히 유지 보수 관리로 소문난 React에도 관심이 많지요!<br><br>
+          이런 저의 끊임없는 발전과 열정을 지켜봐주세요. 물론 함께하면 더욱 좋고요!<br>
+          좋아하는 일을 즐기면서 잘하는 것, 제가 꿈꾸는 저의 모습입니다.</p>
+      </section>
+      <section class="fullpage">
         <!-- full page start -->
         <div id="fullpage">
-          <div class="section portfolio_section" id="section0">
-            <h2 class="portfolio_title">HYEJIN'S PORTFOLIO<br />PAGE</h2>
+          <div class="section home__section" id="section0">
+            <img src="./img/icon-people-circle.svg" alt="avartar" class="home__avartar">
+            <h1 class="home__title">환영합니다<br>혜진의 포트폴리오 사이트입니다</h1>
             <div class="scroll-downs">
-              <a href="#first">
+              <a href="#skills">
                 <div class="mousey">
                   <div class="scroller"></div>
                 </div>
@@ -95,142 +80,226 @@
             </div>
           </div>
           <!-- section 0 end -->
-          <div class="section" id="section1">
-            <div class="contents">
-              <div class="contents_left">
-                <h2 class="content_title">My Schedule</h2>
-                <h3 class="content_cate">Develpment</h3>
-                <div class="content_imgs">
-                  <ul>
-                    <li>
-                      <img src="./img/stack/php_icon.png" alt="php_icon" />
-                    </li>
-                    <li>
-                      <img src="./img/stack/css_icon.png" alt="css_icon" />
-                    </li>
-                    <li><img src="./img/stack/js_icon.png" alt="js_icon" /></li>
-                    <li><img src="./img/stack/jq_icon.png" alt="jq_icon" /></li>
-                  </ul>
-                </div>
-                <div class="content_lists">
-                  <ul class="content_ul">
-                    <li>PHP를 이용한 관리자 로그인 기능</li>
-                    <li>JSON을 이용한 전체 그래프 진행률 실시간 변경</li>
-                    <li>MARIADB를 이용한 데이터베이스 출력 기능</li>
-                    <li>제목 클릭 시 제목 및 내용 수정 기능</li>
-                  </ul>
-                </div>
-                <div class="content_buttons">
-                  <a href="#" target="_blank">VIEW WEBSITE</a>
-                  <a href="#" target="_blank">REQUIREMENTS</a>
-                  <a href="#" target="_blank">GIT HUBE</a>
-                </div>
+          <div class="section skill__section" id="section1">
+            <div class="skills">
+              <div class="skills__left">
+                <h2 class="skill__title">My Skills</h2>
+                <h3 class="skill__sub">Skills & Attributes</h3>
+                <p class="skill__p">아래 스킬에 경험이 있고 새로운 것을 배우는데 관심이 있습니다.<br>
+                계획을 세워 협업은 물론 혼자서 해결하는 자세를 갖추어 매일 발전해나가고 있습니다.</p>
               </div>
-              <div class="contents_right">
-                <img
-                  src="./img/website/port_website1.png"
-                  alt="website_myshedule"
-                  class="content_img"
-                />
+              <div class="skills__right">
+                <div class="skill__container">
+                  <div class="skill-item">
+                    <img src="./img/stack/html_icon.png" alt="html_icon" />
+                    <p class="skill__name">HTML5</p>
+                  </div>
+                  <div class="skill-item">
+                    <ul>
+                      <li class="sub-list">웹 표준 준수</li>
+                      <li class="sub-list">시맨틱 태그 활용</li>
+                    </ul>
+                  </div>
+                  <div class="skill-item">
+                    <img src="./img/stack/css_icon.png" alt="css_icon" />
+                    <p class="skill__name">CSS3</p>
+                  </div>
+                  <div class="skill-item">
+                    <ul>
+                      <li class="sub-list">반응형 작업</li>
+                      <li class="sub-list">웹 접근성을 고려한 IR 기법</li>
+                    </ul>
+                  </div>
+                  <div class="skill-item">
+                    <img src="./img/stack/js_icon.png" alt="js_icon" />
+                    <p class="skill__name">Javascript</p></div>
+                  <div class="skill-item">
+                    <ul>
+                      <li class="sub-list">VanilaJS 활용</li>
+                      <li class="sub-list">최신 ES6 문법 숙지</li>
+                    </ul>
+                  </div>
+                  <div class="skill-item">
+                    <img src="./img/stack/jq_icon.png" alt="jq_icon" />
+                    <p class="skill__name">Jquery</p>
+                  </div>
+                  <div class="skill-item">
+                    <ul>
+                      <li class="sub-list">Jquery 메서드를 활용</li>
+                    </ul>
+                  </div>
+                  <div class="skill-item">
+                    <img src="./img/stack/php_icon.png" alt="php_icon" />
+                    <p class="skill__name">PHP</p>
+                  </div>
+                  <div class="skill-item">
+                    <ul>
+                      <li class="sub-list">php 활용 가능</li>
+                      <li class="sub-list">SESSION 등...</li>
+                    </ul>
+                  </div>
+                  <div class="skill-item">
+                    <img src="./img/stack/github_icon.png" alt="git_icon" />
+                    <p class="skill__name">Git hube</p>
+                  </div>
+                  <div class="skill-item">
+                     <ul>
+                      <li class="sub-list">GIT을 통한 형상 관리 가능</li>
+                      <li class="sub-list">꾸준한 백업</li>
+                    </ul>
+                  </div>
+                  <div class="skill-item">
+                    <img src="./img/stack/file_icon.png" alt="file_icon" />
+                    <p class="skill__name">etc</p>
+                  </div>
+                  <div class="skill-item">
+                    <ul>
+                      <li class="sub-list">리액트 공부 중</li>
+                      <li class="sub-list">CS지식 쌓는 중</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- section 1 end -->
-          <div class="section" id="section2">
-            <div class="contents">
-              <div class="contents_left">
-                <h2 class="content_title">Movie API</h2>
-                <h3 class="content_cate">Develpment</h3>
-                <div class="content_imgs">
-                  <ul>
-                    <li>
-                      <img src="./img/stack/html_icon.png" alt="html_icon" />
-                    </li>
-                    <li>
-                      <img src="./img/stack/css_icon.png" alt="css_icon" />
-                    </li>
-                    <li><img src="./img/stack/js_icon.png" alt="js_icon" /></li>
-                    <li><img src="./img/stack/jq_icon.png" alt="jq_icon" /></li>
-                    <li>
-                      <img src="./img/stack/json_icon.png" alt="json_icon" />
-                    </li>
-                  </ul>
-                </div>
-                <div class="content_lists">
-                  <ul class="content_ul">
-                    <li>네이버 REST API를 이용한 영화 검색 기능</li>
-                    <li>AJAX를 이용한 외국 영화 검색 기능</li>
-                    <li>장르별 영화 탭 기능</li>
-                    <li>JSON을 이용한 영화 세부 정보 표시</li>
-                  </ul>
-                </div>
-                <div class="content_buttons">
-                  <a href="#" target="_blank">VIEW WEBSITE</a>
-                  <a href="#" target="_blank">REQUIREMENTS</a>
-                  <a href="#" target="_blank">GIT HUBE</a>
-                </div>
+          <div class="section works__section" id="section2">
+            <div class="works">
+              <div class="works__left">
+                <h2 class="work__title">My Works</h2>
+                <h3 class="work__sub">project</h3>
+                <p class="work__p">새롭고 다양한 기능을 찾아서 적용해보는 것을 즐깁니다.<br>
+                작업물이 늘어날수록 발전하는 모습을 볼 수 있습니다.<br>
+                Git hube에서 더 자세히 확인할 수 있습니다.</p>
+                더 많은 포트폴리오를 감상하시고 싶으시다면?
+                <a href="#">My portfolio</a>
               </div>
-              <div class="contents_right">
-                <img
-                  src="./img/website/port_website2.png"
-                  alt="MOVIE_API_WEBSITE"
-                  class="content_img"
-                />
+              <div class="works__right">
+                <div class="work-btns">
+                  <ul>
+                    <li class="work-btn" data-filter="*">ALL</li>
+                    <li class="work-btn" data-filter="clone">CLONE</li>
+                    <li class="work-btn" data-filter="develop">DEVELOPMENT</li>
+                    <li class="work-btn" data-filter="etc">ETC</li>
+                  </ul>
+                </div>
+                <div class="work-items">
+                  <ul>
+                    <li class="work-item" data-type="develop">
+                      <div class="work-itembox">
+                        <img src="img/website/port_website1.png" alt="">
+                        <span class="overlay"></span>
+                        <div class="project__description">
+                          <h3>My schedule</h3>
+                          <p>clone coding with html and css</p>
+                          <div class="project__link">
+                            <a href="#">View website</a>
+                            <a href="#">git hube</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="work-item" data-type="develop">
+                        <img src="img/website/port_website2.png" alt="">
+                        <span class="overlay"></span>
+                        <div class="project__description">
+                          <h3>Movie-search</h3>
+                          <p>clone coding with html and css</p>
+                          <div class="project__link">
+                            <a href="#">View website</a>
+                            <a href="#">git hube</a>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="work-item" data-type="develop">
+                        <img src="img/website/port_website3.png" alt="">
+                        <span class="overlay"></span>
+                        <div class="project__description">
+                          <h3>Todo-list</h3>
+                          <p>clone coding with html and css</p>
+                          <div class="project__link">
+                            <a href="#">View website</a>
+                            <a href="#">git hube</a>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="work-item" data-type="clone">
+                        <img src="img/website/port_website4.png" alt="">
+                        <span class="overlay"></span>
+                        <div class="project__description">
+                          <h3>Godiva</h3>
+                          <p>clone coding with html and css</p>
+                          <div class="project__link">
+                            <a href="#">View website</a>
+                            <a href="#">git hube</a>
+                          </div>
+                        </div>
+                    </li>
+                    <li class="work-item" data-type="etc">
+                        <img src="img/website/port_website5.png" alt="">
+                        <span class="overlay"></span>
+                        <div class="project__description">
+                          <h3>My portfolio</h3>
+                          <p>clone coding with html and css</p>
+                          <div class="project__link">
+                            <a href="#">View website</a>
+                            <a href="#">git hube</a>
+                          </div>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
           <!-- section 2 end -->
-          <div class="section" id="section3">
-            <div class="contents">
-              <div class="contents_left">
-                <h2 class="content_title">ToDo List</h2>
-                <h3 class="content_cate">Develpment</h3>
-                <div class="content_imgs">
-                  <ul>
-                    <li>
-                      <img src="./img/stack/html_icon.png" alt="html_icon" />
-                    </li>
-                    <li>
-                      <img src="./img/stack/css_icon.png" alt="css_icon" />
-                    </li>
-                    <li><img src="./img/stack/js_icon.png" alt="js_icon" /></li>
-                  </ul>
-                </div>
-                <div class="content_lists">
-                  <ul class="content_ul">
-                    <li>순수 자바스크립트로만 구현된 사이트</li>
-                    <li>
-                      LocalStorge를 이용한 저장 기능
-                      <ul class="depth2">
-                        <li>이름 저장</li>
-                        <li>할 일 저장</li>
-                        <li>끝낸 일 저장</li>
-                      </ul>
-                    </li>
-                    <li>위치 API를 이용한 날씨 API 및 위치 출력</li>
-                    <li>Math random 메서드를 활용한 랜덤 배경 기능</li>
-                  </ul>
-                </div>
-                <div class="content_buttons">
-                  <a href="#" target="_blank">VIEW WEBSITE</a>
-                  <a href="#" target="_blank">REQUIREMENTS</a>
-                  <a href="#" target="_blank">GIT HUBE</a>
-                </div>
+          <div class="section contact__section" id="section3">
+            <div class="contacts">
+              <div class="contact__left">
+                <h2 class="contact__title">Contact Me</h2>
+                <h3 class="contact__sub">관심이 있으신가요?</h3>
+                <p class="contact__p">언제든 연락주세요.</p>
               </div>
-              <div class="contents_right">
-                <img
-                  src="./img/website/port_website3.png"
-                  alt="todolist"
-                  class="content_img"
-                />
+              <div class="contact__right">
+                  <div class="contact_list">
+                    <ul class="contact_ul">
+                      <li>
+                        <button class="contact-email" value="uhj1993@naver.com">
+                          <i class="far fa-envelope"></i>
+                          <div class="tooltip-content">
+                            <p>E-Mail</p>
+                          </div>
+                        </button>
+                      </li>
+                      <li>
+                        <a
+                          href="https://jineecode.tistory.com/"
+                          target="_blank"
+                          class="contact"
+                        >
+                          <img src="./img/tistory.png" alt="tech_blog" />
+                          <div class="tooltip-content">
+                            <p>BLOG</p>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://github.com/uhj1993"
+                          target="_blank"
+                          class="contact"
+                        >
+                          <img src="./img/github.png" alt="github" />
+                          <div class="tooltip-content">
+                            <p>Git-Hub</p>
+                          </div></a
+                        >
+                      </li>
+                    </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- section 3 end -->
-          <div class="section contact_section" id="section4">
-            <div class="contact_container">
-              <h2 class="contact_title">CONTACT ME</h2>
-              <div class="contact_list">
+              <!-- <div class="contact_list">
                 <ul class="contact_ul">
                   <li>
                     <button class="contact email" value="uhj1993@naver.com">
@@ -265,91 +334,17 @@
                     >
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <div class="contents">
-          <div class="contents_center">
-            <h2 class="content_title">MORE</h2>
-            <div class="more_btns">
-              <ul>
-                <li class="more_btn" data-filter="*">ALL</li>
-                <li class="more_btn" data-filter="clone">CLONE</li>
-                <li class="more_btn" data-filter="develop">DEVELOPMENT</li>
-                <li class="more_btn" data-filter="etc">ETC</li>
-              </ul>
-            </div>
-            <div class="more_container">
-              <ul>
-                <li class="more_items" data-type="clone">
-                  <div class="workBox people">
-                    <div>
-                      <img src="./img/portfolio-01.jpg" alt="" />
-                      <span class="hoverBox"></span>
-                      <div class="hoverContents">
-                        <a
-                          href="images/portfolio-01.jpg"
-                          data-lightbox="myWork"
-                          data-title="My caption"
-                        >
-                          <i class="fa fa-search"></i>
-                        </a>
-                        <h3 class="hoverTit">My Title</h3>
-                        <p class="hoverTxt">free to use our template</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="more_items" data-type="develop">
-                  <div class="workBox people">
-                    <div>
-                      <img src="./img/portfolio-01.jpg" alt="" />
-                      <span class="hoverBox"></span>
-                      <div class="hoverContents">
-                        <a
-                          href="images/portfolio-01.jpg"
-                          data-lightbox="myWork"
-                          data-title="My caption"
-                        >
-                          <i class="fa fa-search"></i>
-                        </a>
-                        <h3 class="hoverTit">My Title</h3>
-                        <p class="hoverTxt">free to use our template</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="more_items" data-type="etc">
-                  <div class="workBox people">
-                    <div>
-                      <img src="./img/portfolio-01.jpg" alt="" />
-                      <span class="hoverBox"></span>
-                      <div class="hoverContents">
-                        <a
-                          href="images/portfolio-01.jpg"
-                          data-lightbox="myWork"
-                          data-title="My caption"
-                        >
-                          <i class="fa fa-search"></i>
-                        </a>
-                        <h3 class="hoverTit">My Title</h3>
-                        <p class="hoverTxt">free to use our template</p>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <!-- section 3 end -->
         </div>
       </section>
     </div>
     <!-- jquery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- fullpage javascript -->
+    <script type="text/javascript" src="./js/fullpage/vendors/scrolloverflow.min.js"></script>
     <script src="./js/fullpage/fullpage.js"></script>
     <script src="./js/fullpage/Initialization.js"></script>
     <!-- swiper javascript -->
