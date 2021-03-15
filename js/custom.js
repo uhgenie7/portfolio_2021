@@ -1,5 +1,4 @@
 // menu toggler
-
 const menuToggler = document.querySelector('.menu_toggle');
 const menuOpen = menuToggler.querySelector('.fa-bars');
 const menuClose = menuToggler.querySelector('.menu_times');
@@ -26,7 +25,7 @@ document.addEventListener("click", function () {
 });
 
 // email clipboard
-const eMail = document.querySelector('.email');
+const eMail = document.querySelector('.contact-email');
 eMail.addEventListener("click", () => {
   let dummy = document.createElement('textarea');
   dummy.value = 'uhj1993@naver.com';  
@@ -48,6 +47,11 @@ userIcon.addEventListener("click", (e) => {
   aboutModal.classList.add("show");
 });
 
+// skills click NOT close
+// aboutModal.addEventListener("click", (e) => {
+//   e.stopPropagation();
+// });
+
 // times close x
 aboutTimes.addEventListener("click", (e) => {
   e.stopPropagation();
@@ -55,22 +59,16 @@ aboutTimes.addEventListener("click", (e) => {
 });
 
 // background close
-document.addEventListener("click", (e) => {
-  if (!e.this) {
-    aboutModal.classList.remove("show");
-  }
+document.addEventListener("click", () => {
+  aboutModal.classList.remove("show");
 });
 
-// contents click NOT close
-aboutModal.addEventListener("click", (e) => {
-  e.preventDefault();
-  e.stopPropagation();
-});
+
 
 // filter
-const workBtnContainer = document.querySelector('.more_btns');
-const projectContainer = document.querySelector('.more_container');
-const projects = document.querySelectorAll('.more_items');
+const workBtnContainer = document.querySelector('.work-btns');
+const projectContainer = document.querySelector('.work-items');
+const projects = document.querySelectorAll('.work-item');
 let currentMenu;
 
 workBtnContainer.addEventListener('click', (e) => {
@@ -90,7 +88,7 @@ workBtnContainer.addEventListener('click', (e) => {
             if (filter === '*' || filter === project.dataset.type) {
               project.classList.remove('invisible');
             } else {
-                project.classList.add('invisible');
+              project.classList.add('invisible');
             }
         });
         // projectContainer.classList.remove('active');
