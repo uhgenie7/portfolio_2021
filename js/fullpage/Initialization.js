@@ -1,10 +1,11 @@
 
 $("#fullpage").fullpage({
-          anchors:['top', 'first', 'second', 'third', 'fourth', 'fifth','contact'],
+          anchors:['home', 'skills', 'works', 'contact'],
           verticalCentered: false,
           css3: true,
           navigation: true,
           navigationPosition: "right",
+          scrollOverflow: true,
           onLeave: function (index, nextIndex, direction) {
             if (index == 3 && direction == "down") {
               $(".section")
