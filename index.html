@@ -26,22 +26,26 @@
   <body>
     <div class="wrap">
       <header class="header">
-        <h1 class="user">
+        <h2 class="user">
           <a href="#">
             <i class="fas fa-user-circle"></i>
           </a>
-        </h1>
+        </h2>
         <nav class="menu">
-          <div class="menu_toggle">
+          <div class="menu__toggle">
             <i class="fas fa-bars"></i>
             <i class="fas fa-times menu_times"></i>
           </div>
-          <div class="menu_container">
-            <ul>
-              <li><a href="#home" class="menu_item">HOME</a></li>
-              <li><a href="#skills" class="menu_item">SKILLS</a></li>
-              <li><a href="#works" class="menu_item active">WORKS</a></li>
-              <li><a href="#contact" class="menu_item">CONTACT</a></li>
+          <div class="menu__container">
+            <ul id="myMenu">
+              <li>
+                <a href="#home" class="menu_item" data-menuanchor="home">HOME</a>
+              </li>
+              <li>
+                <a href="#skills" class="menu_item" data-menuanchor="skills" >SKILLS</a>
+              </li>
+              <li><a href="#works" class="menu_item" data-menuanchor="works">WORKS</a></li>
+              <li><a href="#contact" class="menu_item" data-menuanchor="contact">CONTACT</a></li>
             </ul>
           </div>
         </nav>
@@ -53,14 +57,11 @@
         <div class="about_icon">
           <i class="fas fa-times about_times"></i>
         </div>
-        <div class="more_icon">
-          <i class="fas fa-times"></i>
-        </div>
         <h2 class="user__name">엄혜진</h2>
         <p class="user__p">
-          반갑습니다. 개발을 좋아하는 웹 퍼블리셔 엄혜진입니다.<br>
+          반갑습니다.<br>개발을 좋아하는 웹 퍼블리셔 엄혜진입니다.<br>
           저는 시맨틱 마크업을 고려하고 정렬된 스타일, JS를 활용한 동적인 기능 구현을 좋아합니다.<br><br>
-          저는 웹에 관심이 많은 만큼 개발을 즐기고 열정을 아끼지 않는 인재랍니다.<br>
+          저는 웹에 관심이 많은 만큼 개발을 즐기고 열정을 아끼지 않는 인재랍니다.<br><br>
           요즈음엔 JS 최신 문법인 Module과 Class를 이용한 분할 관리에 관심이 많습니다. <br>당연히 유지 보수 관리로 소문난 React에도 관심이 많지요!<br><br>
           이런 저의 끊임없는 발전과 열정을 지켜봐주세요. 물론 함께하면 더욱 좋고요!<br>
           좋아하는 일을 즐기면서 잘하는 것, 제가 꿈꾸는 저의 모습입니다.</p>
@@ -80,7 +81,7 @@
             </div>
           </div>
           <!-- section 0 end -->
-          <div class="section skill__section" id="section1">
+          <div class="section skill__section fp-auto-height fp-auto-height-responsive" id="section1">
             <div class="skills">
               <div class="skills__left">
                 <h2 class="skill__title">My Skills</h2>
@@ -163,16 +164,14 @@
             </div>
           </div>
           <!-- section 1 end -->
-          <div class="section works__section" id="section2">
+          <div class="section works__section fp-auto-height-responsive" id="section2">
             <div class="works">
               <div class="works__left">
                 <h2 class="work__title">My Works</h2>
                 <h3 class="work__sub">project</h3>
                 <p class="work__p">새롭고 다양한 기능을 찾아서 적용해보는 것을 즐깁니다.<br>
-                작업물이 늘어날수록 발전하는 모습을 볼 수 있습니다.<br>
-                Git hube에서 더 자세히 확인할 수 있습니다.</p>
-                더 많은 포트폴리오를 감상하시고 싶으시다면?
-                <a href="#">My portfolio</a>
+                <span class="p-hide">작업물이 늘어날수록 발전하는 모습을 볼 수 있습니다.<br></span>
+                Git hube에서 더 자세히 확인할 수 있습니다.</p><br>
               </div>
               <div class="works__right">
                 <div class="work-btns">
@@ -190,8 +189,8 @@
                         <img src="img/website/port_website1.png" alt="">
                         <span class="overlay"></span>
                         <div class="project__description">
-                          <h3>My schedule</h3>
-                          <p>clone coding with html and css</p>
+                          <h3 class="project__title">My schedule</h3>
+                          <p class="project__p">clone coding with html and css</p>
                           <div class="project__link">
                             <a href="#">View website</a>
                             <a href="#">git hube</a>
@@ -200,52 +199,56 @@
                       </div>
                     </li>
                     <li class="work-item" data-type="develop">
-                        <img src="img/website/port_website2.png" alt="">
+                        <div class="work-itembox"><img src="img/website/port_website2.png" alt="">
                         <span class="overlay"></span>
-                        <div class="project__description">
-                          <h3>Movie-search</h3>
-                          <p>clone coding with html and css</p>
-                          <div class="project__link">
-                            <a href="#">View website</a>
-                            <a href="#">git hube</a>
+                          <div class="project__description">
+                            <h3 class="project__title">Movie-search</h3>
+                            <p class="project__p">clone coding with html and css</p>
+                            <div class="project__link">
+                              <a href="#">View website</a>
+                              <a href="#">git hube</a>
+                            </div>
                           </div>
                         </div>
                     </li>
                     <li class="work-item" data-type="develop">
-                        <img src="img/website/port_website3.png" alt="">
+                        <div class="work-itembox"><img src="img/website/port_website3.png" alt="">
                         <span class="overlay"></span>
                         <div class="project__description">
-                          <h3>Todo-list</h3>
-                          <p>clone coding with html and css</p>
+                          <h3 class="project__title">Todo-list</h3>
+                          <p class="project__p">clone coding with html and css</p>
                           <div class="project__link">
                             <a href="#">View website</a>
                             <a href="#">git hube</a>
                           </div>
                         </div>
+                      </div>
                     </li>
                     <li class="work-item" data-type="clone">
-                        <img src="img/website/port_website4.png" alt="">
+                        <div class="work-itembox"><img src="img/website/port_website4.png" alt="">
                         <span class="overlay"></span>
                         <div class="project__description">
-                          <h3>Godiva</h3>
-                          <p>clone coding with html and css</p>
+                          <h3 class="project__title">Godiva</h3>
+                          <p class="project__p">clone coding with html and css</p>
                           <div class="project__link">
                             <a href="#">View website</a>
                             <a href="#">git hube</a>
                           </div>
                         </div>
+                      </div>
                     </li>
                     <li class="work-item" data-type="etc">
-                        <img src="img/website/port_website5.png" alt="">
+                        <div class="work-itembox"><img src="img/website/port_website5.png" alt="">
                         <span class="overlay"></span>
                         <div class="project__description">
-                          <h3>My portfolio</h3>
-                          <p>clone coding with html and css</p>
+                          <h3 class="project__title">My portfolio</h3>
+                          <p class="project__p">clone coding with html and css</p>
                           <div class="project__link">
                             <a href="#">View website</a>
                             <a href="#">git hube</a>
                           </div>
                         </div>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -262,7 +265,7 @@
               </div>
               <div class="contact__right">
                   <div class="contact_list">
-                    <ul class="contact_ul">
+                    <ul class="contact__ul">
                       <li>
                         <button class="contact-email" value="uhj1993@naver.com">
                           <i class="far fa-envelope"></i>
@@ -299,52 +302,15 @@
                 </div>
               </div>
             </div>
-              <!-- <div class="contact_list">
-                <ul class="contact_ul">
-                  <li>
-                    <button class="contact email" value="uhj1993@naver.com">
-                      <i class="far fa-envelope"></i>
-                      <div class="tooltip-content">
-                        <p>E-Mail</p>
-                      </div>
-                    </button>
-                  </li>
-                  <li>
-                    <a
-                      href="https://jineecode.tistory.com/"
-                      target="_blank"
-                      class="contact"
-                    >
-                      <img src="./img/tistory.png" alt="tech_blog" />
-                      <div class="tooltip-content">
-                        <p>BLOG</p>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://github.com/uhj1993"
-                      target="_blank"
-                      class="contact"
-                    >
-                      <img src="./img/github.png" alt="github" />
-                      <div class="tooltip-content">
-                        <p>Git-Hub</p>
-                      </div></a
-                    >
-                  </li>
-                </ul>
-              </div> -->
-            </div>
           </div>
-          <!-- section 3 end -->
         </div>
+          <!-- section 3 end -->
       </section>
     </div>
     <!-- jquery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- fullpage javascript -->
-    <script type="text/javascript" src="./js/fullpage/vendors/scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="./js/fullpage/vendors/scrolloverflow.js"></script>
     <script src="./js/fullpage/fullpage.js"></script>
     <script src="./js/fullpage/Initialization.js"></script>
     <!-- swiper javascript -->
