@@ -1,8 +1,8 @@
 // menu toggler
-const menuToggler = document.querySelector('.menu_toggle');
+const menuToggler = document.querySelector('.menu__toggle');
 const menuOpen = menuToggler.querySelector('.fa-bars');
 const menuClose = menuToggler.querySelector('.menu_times');
-const menuContainer = document.querySelector('.menu_container');
+const menuContainer = document.querySelector('.menu__container');
 
 menuOpen.addEventListener('click', (e) => {
   e.stopPropagation();
@@ -95,3 +95,7 @@ workBtnContainer.addEventListener('click', (e) => {
     }, 300);
 
 });
+
+console.log(
+    "%c즐거운 시간 보내세요", 
+"background-color:#0657a2; color: #fff; font-weight:bold; font-size:10px; padding: 4px;");
