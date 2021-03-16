@@ -1,19 +1,15 @@
 @media screen and (max-width: 1480px) {
   /* menu */
-  .menu_container {
+  .menu__container {
     width: 40%;
   }
 
-  .stack {
-    width: 100%;
-  }
-
-  .section .skills__left {
+  .section .skills__left, .section .works__left, .section .contact__left {
     width: 40%;
     padding: 6rem 2rem;
   }
 
-  .section .skills__right {
+  .skills__right, .works__right, .contact__right {
     width: 60%;
   }
 
@@ -21,58 +17,110 @@
     font-size: 50px;
   }
 
-  .portfolio_section .portfolio_title {
+  /* WORK */
+  .work__title {
     font-size: 50px;
   }
+
+    .work-items .work-item {
+    width: 50%;
+  }
+
+  /* contact */
+    .contact__title {
+    font-size: 50px;
+  }
+
 }
 
 @media screen and (max-width: 1100px) {
   /* menu */
-  .menu_container {
+  .menu__container {
     width: 60%;
   }
 
-  .section .skills {
-    flex-direction: column-reverse;
+  .skills, .works, .contacts {
+    flex-direction: column;
   }
 
-  .section .skills__left {
+  .section .skills__left{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .section .skills__right {
+    width: 100%;
+    height: 60%;
+    padding: 0;
+  }
+
+  .skill__container {
+   width: 100%;
+   padding: 0;
+  }
+
+  .skill-item {
+    background: none;
+  }
+
+  .sub-list, .skill__name {
+    font-size: 20px;
+  }
+
+  /* work */
+  .section .works__left{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    padding: 4rem 0;
+  }
+
+  .section .works__right {
+    width: 100%;
+    height: 60%;
+    padding: 5rem 0;
+  }
+
+  .p-hide {
+    display: none;
+  }
+
+
+
+  /* contact */
+
+  .section .contact__left{
     width: 100%;
     height: 50%;
     text-align: center;
     padding: 1rem;
   }
 
-  .skills__left .content_imgs {
-    margin: 15px auto;
-  }
-
-  .skills__left .content_buttons {
-    margin-top: 0;
-  }
-
-  .depth2 {
-    display: none;
-  }
-
-  .section .skills__right {
+  .section .contact__right {
+    width: 100%;
     height: 50%;
     padding: 0;
   }
-
-  .skills__left.pc {
-    display: none;
-  }
-
-  /* .skill__title.mob {
-    display: block;
-  } */
+  
 }
 
 @media screen and (max-width: 950px) {
   /* profile */
   .about {
     width: 85%;
+    padding: 1rem;
+  }
+
+  .user__p {
+    text-align: left;
+  }
+
+  .about .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
 
   .profile {
@@ -83,23 +131,151 @@
     width: 100%;
   }
 
-  .about .user_name {
-    font-size: 2rem;
-  }
-
   /* menu */
-  .menu_container {
+  .menu__container {
     width: 80%;
   }
 }
 
 @media screen and (max-width: 650px) {
+  .header {
+    padding: 20px;
+  }
+
   .about {
     width: 95%;
   }
 
+  .header .user i,
+  .menu .fa-bars {
+    font-size: 40px;
+  }
+
+
+
   /* menu */
-  .menu_container {
+  .menu__container {
     width: 100%;
+  }
+
+  /* work */
+  .work-items .work-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* current */
+  .skills__left .skill__title,
+  .work__title, .contact__title {
+    font-size: 36px;
+  }
+
+  .skill__sub, .work__sub, .contact__sub {
+    font-size: 16px;
+  }
+
+  .skill__p, .work__p, .contact__p {
+    font-size: 13px;
+  }
+
+
+  /* home */
+  .home__avartar {
+    width: 25%;
+  }
+
+  .home__section .home__title {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  /* profile */
+  .profile  {
+    display: none;
+  } 
+
+  .about .fa-times,
+  .menu .fa-times {
+    font-size: 30px;
+  }
+
+  .user__p {
+    font-size: 0.9rem;
+  }
+
+  /* header */
+  .header .user i, .menu .fa-bars {
+    font-size: 30px;
+}
+
+  /* menu */
+  .menu__container {
+    padding: 5rem 4rem;
+  }
+
+  .menu__container .menu_item {
+    font-size: 2rem;
+  }
+
+  /* skill */
+.skill__container {
+  border: 1px solid;
+}
+
+.skill-item:nth-child(odd),
+.skill-item:nth-child(even){
+  grid-column: 1/3;
+}
+
+.skill-item:nth-child(even){
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.sub-list, .skill__name {
+    font-size: 16px;
+}
+
+/* work */
+.work-btns ul {
+  display: block;
+}
+
+.section .works__right {
+  padding: 1rem 0;
+}
+
+.work-btns .work-btn {
+  font-size: 16px;
+}
+
+.work-itembox {
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fdfdfd;
+}
+
+.project__description {
+  position:static;
+  transform: none;
+  opacity: 1;
+  display: block;
+}
+
+.project__link {
+  justify-content: space-around;
+}
+
+/* contact */
+  .contact_list {
+    width: 100%;
+  }
+
+  .contact__ul {
+    justify-content: space-around;  
+  }
+
+  .contact__ul li {
+    margin-right: 0px;
   }
 }
