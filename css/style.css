@@ -20,7 +20,6 @@ li {
 }
 
 /* public */
-
 :root {
   /* color */
   --color-main: #0657a2;
@@ -31,7 +30,19 @@ li {
 
 body {
   background: #0657a2;
-  padding-top: 93px;
+}
+
+/* side nav */
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #fdfdfd;
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  background: #fdfdfd;
 }
 
 /* header style */
@@ -42,7 +53,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem;
+  padding: 1.5rem 3rem;
 }
 
 .header .fas {
@@ -58,7 +69,7 @@ body {
 /* main container and scroll animation */
 .home__section {
   position: relative;
-  background: url(../img/info1.jpg) no-repeat center;
+  background: url(/portfolio/img/info1.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
   display: flex;
@@ -71,7 +82,6 @@ body {
 .home__section .home__title {
   font-size: 32px;
 }
-
 
 .scroll-downs {
   position: absolute;
@@ -226,8 +236,9 @@ body {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.skill__title, .work__title,
-.contact__title{
+.skill__title,
+.work__title,
+.contact__title {
   text-transform: uppercase;
   font-size: 70px;
   font-family: "Open Sans", sans-serif;
@@ -251,7 +262,7 @@ body {
 }
 
 .skills__right,
-.contact__right{
+.contact__right {
   width: 70%;
   height: 100%;
   padding: 10rem 0;
@@ -266,12 +277,12 @@ body {
   height: 100%;
   padding: 0 6rem;
   display: grid;
-  grid-template-columns: 3fr 7fr;
+  grid-template-columns: 3fr 7fr 3fr 7fr;
   overflow: auto;
 }
 
 .skill__name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Open Sans", sans-serif;
   color: #fdfdfd;
 }
@@ -279,32 +290,36 @@ body {
 .skill-item {
   border-bottom: 1px solid #fdfdfd;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   background: rgba(0, 0, 0, 0.3);
 }
 
-.skill-item:nth-child(odd){
+.skill-item:nth-child(odd) {
   text-align: center;
 }
 
-.skill-item:nth-child(even){
+.skill-item:nth-child(even) {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fdfdfd;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 /* work section */
-.works{
+.works {
   width: 100%;
   margin: auto;
 }
 
-.works__right{
+.works__right {
   width: 70%;
   height: 100%;
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .work-itembox {
@@ -332,9 +347,11 @@ body {
   margin: 10px;
   cursor: pointer;
   border-radius: 10px;
+  transition: all 0.4s;
 }
 
-.work-btn.active {
+.work-btn.active,
+.work-btn:hover {
   background: black;
 }
 
@@ -344,7 +361,7 @@ body {
   margin: auto;
 }
 
-.work-items ul{
+.work-items ul {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -362,18 +379,16 @@ body {
   display: none;
 }
 
-
-.work-items .work-item img{
+.work-items .work-item img {
   width: 100%;
   border-radius: 10px;
 }
-
 
 .overlay {
   display: block;
   width: 90%;
   height: 90%;
-  background: rgba(32, 53, 63, 0.4);
+  background: rgba(32, 53, 63, 0.8);
   left: 5%;
   top: 5%;
   position: absolute;
@@ -437,8 +452,11 @@ body {
   margin: 5px;
 }
 
-
 /* tool tip style */
+.contact__li {
+  position: relative;
+}
+
 .tooltip-content {
   width: 100px;
   background-color: #20353f;
@@ -473,13 +491,13 @@ body {
   position: relative;
 }
 
-  .contact_list {
-    width: 50%;
-  }
+.contact__lists {
+  width: 50%;
+}
 
 .contact__ul {
   display: flex;
-  justify-content: space-around;  
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -505,18 +523,18 @@ body {
 .about {
   width: 70%;
   height: 80%;
-  transform: translate(-50%, -50%);
   display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url(../img/about.jpg) no-repeat center;
+  background: url(/portfolio/img/about.jpg) no-repeat center;
   background-size: cover;
-  position: absolute;
-  top: 50%;
-  left: 50%;
   z-index: 99;
   box-shadow: 30px 40px 40px rgb(0 0 0 / 60%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .about.show {
@@ -557,3 +575,30 @@ body {
   color: #fdfdfd;
 }
 
+/* content top */
+.content__top.show {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #fdfdfd;
+  color: #0657a2;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 1px solid;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.content__top.show:hover {
+  color: #fdfdfd;
+  background: #0657a2;
+}
+
+.content__top {
+  display: block;
+}
