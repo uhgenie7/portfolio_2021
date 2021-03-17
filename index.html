@@ -7,30 +7,35 @@
     <meta name="description" content="portfolio for hyejin" />
     <meta name="author" content="hyejin" />
     <!-- favicon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/portfolio/img/favicon.png"
+    />
     <!-- awesome font -->
     <script
       src="https://kit.fontawesome.com/4d645dbcdc.js"
       crossorigin="anonymous"
     ></script>
-    <!-- fullpage css -->
-    <link rel="stylesheet" href="./css/fullpage/fullpage.css" />
-    <!-- swiper css -->
-    <link rel="stylesheet" href="./css/swiper/swiper.min.css" />
+    <!-- fullpage css cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"
+    />
     <!-- css file -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/media.css" />
-
+    <link rel="stylesheet" href="/portfolio/css/style.css" />
+    <link rel="stylesheet" href="/portfolio/css/media.css" />
     <title>UHJ PORTFOLIO</title>
   </head>
   <body>
     <div class="wrap">
       <header class="header">
-        <h2 class="user">
-          <a href="#">
+        <a href="#home">
+          <h2 class="user">
             <i class="fas fa-user-circle"></i>
-          </a>
-        </h2>
+          </h2>
+        </a>
         <nav class="menu">
           <div class="menu__toggle">
             <i class="fas fa-bars"></i>
@@ -39,39 +44,79 @@
           <div class="menu__container">
             <ul id="myMenu">
               <li>
-                <a href="#home" class="menu_item" data-menuanchor="home">HOME</a>
+                <a
+                  href="#home"
+                  id="listHome"
+                  class="menu_item"
+                  data-menuanchor="home"
+                  >HOME</a
+                >
               </li>
               <li>
-                <a href="#skills" class="menu_item" data-menuanchor="skills" >SKILLS</a>
+                <a
+                  href="#skills"
+                  id="listSkills"
+                  class="menu_item"
+                  data-menuanchor="skills"
+                  >SKILLS</a
+                >
               </li>
-              <li><a href="#works" class="menu_item" data-menuanchor="works">WORKS</a></li>
-              <li><a href="#contact" class="menu_item" data-menuanchor="contact">CONTACT</a></li>
+              <li>
+                <a
+                  href="#works"
+                  id="listWorks"
+                  class="menu_item"
+                  data-menuanchor="works"
+                  >WORKS</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  id="listContact"
+                  class="menu_item"
+                  data-menuanchor="contact"
+                  >CONTACT</a
+                >
+              </li>
             </ul>
           </div>
         </nav>
       </header>
       <section class="about">
         <div class="profile">
-          <img src="./img/icon-people-circle.svg" alt="user" />
+          <img src="/portfolio/img/icon-people-circle.svg" alt="user" />
         </div>
         <div class="about_icon">
           <i class="fas fa-times about_times"></i>
         </div>
         <h2 class="user__name">엄혜진</h2>
         <p class="user__p">
-          반갑습니다.<br>개발을 좋아하는 웹 퍼블리셔 엄혜진입니다.<br>
-          저는 시맨틱 마크업을 고려하고 정렬된 스타일, JS를 활용한 동적인 기능 구현을 좋아합니다.<br><br>
-          저는 웹에 관심이 많은 만큼 개발을 즐기고 열정을 아끼지 않는 인재랍니다.<br><br>
-          요즈음엔 JS 최신 문법인 Module과 Class를 이용한 분할 관리에 관심이 많습니다. <br>당연히 유지 보수 관리로 소문난 React에도 관심이 많지요!<br><br>
-          이런 저의 끊임없는 발전과 열정을 지켜봐주세요. 물론 함께하면 더욱 좋고요!<br>
-          좋아하는 일을 즐기면서 잘하는 것, 제가 꿈꾸는 저의 모습입니다.</p>
+          반갑습니다.<br />개발을 좋아하는 웹 퍼블리셔 엄혜진입니다.<br />
+          저는 시맨틱 마크업을 고려하고 정렬된 스타일, JS를 활용한 동적인 기능
+          구현을 좋아합니다.<br /><br />
+          저는 웹에 관심이 많은 만큼 개발을 즐기고 열정을 아끼지 않는
+          인재랍니다.<br /><br />
+          요즈음엔 JS 최신 문법인 Module과 Class를 이용한 분할 관리에 관심이
+          많습니다. <br />당연히 유지 보수 관리로 소문난 React에도 관심이
+          많지요!<br /><br />
+          이런 저의 끊임없는 발전과 열정을 지켜봐주세요. 물론 함께하면 더욱
+          좋고요!<br />
+          좋아하는 일을 즐기면서 잘하는 것, 제가 꿈꾸는 저의 모습입니다.
+        </p>
       </section>
       <section class="fullpage">
         <!-- full page start -->
         <div id="fullpage">
           <div class="section home__section" id="section0">
-            <img src="./img/icon-people-circle.svg" alt="avartar" class="home__avartar">
-            <h1 class="home__title">환영합니다<br>혜진의 포트폴리오 사이트입니다</h1>
+            <img
+              src="/portfolio/img/icon-people-circle.svg"
+              alt="avartar"
+              class="home__avartar"
+            />
+            <h1 class="home__title">
+              환영합니다<br />혜진의 포트폴리오 사이트입니다
+            </h1>
             <div class="scroll-downs">
               <a href="#skills">
                 <div class="mousey">
@@ -81,18 +126,25 @@
             </div>
           </div>
           <!-- section 0 end -->
-          <div class="section skill__section fp-auto-height fp-auto-height-responsive" id="section1">
+          <div class="section skill__section" id="section1">
             <div class="skills">
               <div class="skills__left">
                 <h2 class="skill__title">My Skills</h2>
                 <h3 class="skill__sub">Skills & Attributes</h3>
-                <p class="skill__p">아래 스킬에 경험이 있고 새로운 것을 배우는데 관심이 있습니다.<br>
-                계획을 세워 협업은 물론 혼자서 해결하는 자세를 갖추어 매일 발전해나가고 있습니다.</p>
+                <p class="skill__p">
+                  아래 스킬에 경험이 있고 새로운 것을 배우는데 관심이
+                  있습니다.<br />
+                  계획을 세워 협업은 물론 혼자서 해결하는 자세를 갖추어 매일
+                  발전해나가고 있습니다.
+                </p>
               </div>
               <div class="skills__right">
                 <div class="skill__container">
                   <div class="skill-item">
-                    <img src="./img/stack/html_icon.png" alt="html_icon" />
+                    <img
+                      src="/portfolio/img/stack/html_icon.png"
+                      alt="html_icon"
+                    />
                     <p class="skill__name">HTML5</p>
                   </div>
                   <div class="skill-item">
@@ -102,7 +154,10 @@
                     </ul>
                   </div>
                   <div class="skill-item">
-                    <img src="./img/stack/css_icon.png" alt="css_icon" />
+                    <img
+                      src="/portfolio/img/stack/css_icon.png"
+                      alt="css_icon"
+                    />
                     <p class="skill__name">CSS3</p>
                   </div>
                   <div class="skill-item">
@@ -112,8 +167,9 @@
                     </ul>
                   </div>
                   <div class="skill-item">
-                    <img src="./img/stack/js_icon.png" alt="js_icon" />
-                    <p class="skill__name">Javascript</p></div>
+                    <img src="/portfolio/img/stack/js_icon.png" alt="js_icon" />
+                    <p class="skill__name">Javascript</p>
+                  </div>
                   <div class="skill-item">
                     <ul>
                       <li class="sub-list">VanilaJS 활용</li>
@@ -121,7 +177,7 @@
                     </ul>
                   </div>
                   <div class="skill-item">
-                    <img src="./img/stack/jq_icon.png" alt="jq_icon" />
+                    <img src="/portfolio/img/stack/jq_icon.png" alt="jq_icon" />
                     <p class="skill__name">Jquery</p>
                   </div>
                   <div class="skill-item">
@@ -130,7 +186,10 @@
                     </ul>
                   </div>
                   <div class="skill-item">
-                    <img src="./img/stack/php_icon.png" alt="php_icon" />
+                    <img
+                      src="/portfolio/img/stack/php_icon.png"
+                      alt="php_icon"
+                    />
                     <p class="skill__name">PHP</p>
                   </div>
                   <div class="skill-item">
@@ -140,17 +199,23 @@
                     </ul>
                   </div>
                   <div class="skill-item">
-                    <img src="./img/stack/github_icon.png" alt="git_icon" />
+                    <img
+                      src="/portfolio/img/stack/github_icon.png"
+                      alt="git_icon"
+                    />
                     <p class="skill__name">Git hube</p>
                   </div>
                   <div class="skill-item">
-                     <ul>
+                    <ul>
                       <li class="sub-list">GIT을 통한 형상 관리 가능</li>
                       <li class="sub-list">꾸준한 백업</li>
                     </ul>
                   </div>
                   <div class="skill-item">
-                    <img src="./img/stack/file_icon.png" alt="file_icon" />
+                    <img
+                      src="/portfolio/img/stack/file_icon.png"
+                      alt="file_icon"
+                    />
                     <p class="skill__name">etc</p>
                   </div>
                   <div class="skill-item">
@@ -164,14 +229,22 @@
             </div>
           </div>
           <!-- section 1 end -->
-          <div class="section works__section fp-auto-height-responsive" id="section2">
+          <div
+            class="section works__section fp-auto-height-responsive"
+            id="section2"
+          >
             <div class="works">
               <div class="works__left">
                 <h2 class="work__title">My Works</h2>
                 <h3 class="work__sub">project</h3>
-                <p class="work__p">새롭고 다양한 기능을 찾아서 적용해보는 것을 즐깁니다.<br>
-                <span class="p-hide">작업물이 늘어날수록 발전하는 모습을 볼 수 있습니다.<br></span>
-                Git hube에서 더 자세히 확인할 수 있습니다.</p><br>
+                <p class="work__p">
+                  새롭고 다양한 기능을 찾아서 적용해보는 것을 즐깁니다.<br />
+                  <span class="p-hide"
+                    >작업물이 늘어날수록 발전하는 모습을 볼 수 있습니다.<br
+                  /></span>
+                  Git hube에서 더 자세히 확인할 수 있습니다.
+                </p>
+                <br />
               </div>
               <div class="works__right">
                 <div class="work-btns">
@@ -186,66 +259,154 @@
                   <ul>
                     <li class="work-item" data-type="develop">
                       <div class="work-itembox">
-                        <img src="img/website/port_website1.png" alt="">
+                        <img
+                          src="img/website/port_website1.png"
+                          alt="myschedule_project"
+                        />
                         <span class="overlay"></span>
                         <div class="project__description">
-                          <h3 class="project__title">My schedule</h3>
-                          <p class="project__p">clone coding with html and css</p>
+                          <h3 class="project__title">My Schedule</h3>
+                          <p class="project__p">PHP, MARIADB 사용, JSON</p>
                           <div class="project__link">
-                            <a href="#">View website</a>
-                            <a href="#">git hube</a>
+                            <a
+                              href="http://uhj1993.dothome.co.kr/myschedule"
+                              target="_blank"
+                              >View website</a
+                            >
+                            <a
+                              href="https://github.com/uhj1993/My-Schedule"
+                              target="_blank"
+                              >Git hube</a
+                            >
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="work-item" data-type="develop">
-                        <div class="work-itembox"><img src="img/website/port_website2.png" alt="">
+                      <div class="work-itembox">
+                        <img
+                          src="img/website/port_website2.png"
+                          alt="movie-search_project"
+                        />
                         <span class="overlay"></span>
-                          <div class="project__description">
-                            <h3 class="project__title">Movie-search</h3>
-                            <p class="project__p">clone coding with html and css</p>
-                            <div class="project__link">
-                              <a href="#">View website</a>
-                              <a href="#">git hube</a>
-                            </div>
+                        <div class="project__description">
+                          <h3 class="project__title">Movie-search</h3>
+                          <p class="project__p">OPEN API 사용</p>
+                          <div class="project__link">
+                            <a
+                              href="http://uhj1993.dothome.co.kr/movie_api/index.html"
+                              target="_blank"
+                              >View website</a
+                            >
+                            <a
+                              href="https://github.com/uhj1993/api_project"
+                              target="_blank"
+                              >Git hube</a
+                            >
                           </div>
                         </div>
+                      </div>
                     </li>
                     <li class="work-item" data-type="develop">
-                        <div class="work-itembox"><img src="img/website/port_website3.png" alt="">
+                      <div class="work-itembox">
+                        <img
+                          src="img/website/port_website3.png"
+                          alt="todo-list_project"
+                        />
                         <span class="overlay"></span>
                         <div class="project__description">
                           <h3 class="project__title">Todo-list</h3>
-                          <p class="project__p">clone coding with html and css</p>
+                          <p class="project__p">VanilaJs 사용</p>
                           <div class="project__link">
-                            <a href="#">View website</a>
-                            <a href="#">git hube</a>
+                            <a
+                              href="https://uhj1993.github.io/js_todolist/"
+                              target="_blank"
+                              >View website</a
+                            >
+                            <a
+                              href="https://github.com/uhj1993/js_todolist"
+                              target="_blank"
+                              >Git hube</a
+                            >
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="work-item" data-type="clone">
-                        <div class="work-itembox"><img src="img/website/port_website4.png" alt="">
+                      <div class="work-itembox">
+                        <img
+                          src="img/website/port_website4.png"
+                          alt="godiva_project"
+                        />
                         <span class="overlay"></span>
                         <div class="project__description">
                           <h3 class="project__title">Godiva</h3>
-                          <p class="project__p">clone coding with html and css</p>
+                          <p class="project__p">
+                            Godiva 홈페이지 리뉴얼, NO Jquery
+                          </p>
                           <div class="project__link">
-                            <a href="#">View website</a>
-                            <a href="#">git hube</a>
+                            <a
+                              href="http://uhj1993.dothome.co.kr/godiva/"
+                              target="_blank"
+                              >View website</a
+                            >
+                            <a
+                              href="https://github.com/uhj1993/godiva"
+                              target="_blank"
+                              >Git hube</a
+                            >
                           </div>
                         </div>
                       </div>
                     </li>
                     <li class="work-item" data-type="etc">
-                        <div class="work-itembox"><img src="img/website/port_website5.png" alt="">
+                      <div class="work-itembox">
+                        <img
+                          src="img/website/port_website5.png"
+                          alt="my portfolio_project"
+                        />
                         <span class="overlay"></span>
                         <div class="project__description">
                           <h3 class="project__title">My portfolio</h3>
-                          <p class="project__p">clone coding with html and css</p>
+                          <p class="project__p">
+                            PHP, MARIADB 사용, 로그인 기능
+                          </p>
                           <div class="project__link">
-                            <a href="#">View website</a>
-                            <a href="#">git hube</a>
+                            <a
+                              href="http://uhj1993.dothome.co.kr/portfolio_project/"
+                              target="_blank"
+                              >View website</a
+                            >
+                            <a
+                              href="https://github.com/uhj1993/portfolio_project"
+                              target="_blank"
+                              >Git hube</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="work-item" data-type="develop">
+                      <div class="work-itembox">
+                        <img
+                          src="img/website/port_website6.png"
+                          alt="my portfolio_project"
+                        />
+                        <span class="overlay"></span>
+                        <div class="project__description">
+                          <h3 class="project__title">Portfolio-2021</h3>
+                          <p class="project__p">FullPage 라이브러리 사용</p>
+                          <div class="project__link">
+                            <a
+                              href="http://uhj1993.dothome.co.kr/portfolio"
+                              target="_blank"
+                              >View website</a
+                            >
+                            <a
+                              href="https://github.com/uhj1993/portfolio_2021"
+                              target="_blank"
+                              >Git hube</a
+                            >
                           </div>
                         </div>
                       </div>
@@ -264,59 +425,60 @@
                 <p class="contact__p">언제든 연락주세요.</p>
               </div>
               <div class="contact__right">
-                  <div class="contact_list">
-                    <ul class="contact__ul">
-                      <li>
-                        <button class="contact-email" value="uhj1993@naver.com">
-                          <i class="far fa-envelope"></i>
-                          <div class="tooltip-content">
-                            <p>E-Mail</p>
-                          </div>
-                        </button>
-                      </li>
-                      <li>
-                        <a
-                          href="https://jineecode.tistory.com/"
-                          target="_blank"
-                          class="contact"
-                        >
-                          <img src="./img/tistory.png" alt="tech_blog" />
-                          <div class="tooltip-content">
-                            <p>BLOG</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://github.com/uhj1993"
-                          target="_blank"
-                          class="contact"
-                        >
-                          <img src="./img/github.png" alt="github" />
-                          <div class="tooltip-content">
-                            <p>Git-Hub</p>
-                          </div></a
-                        >
-                      </li>
-                    </ul>
+                <div class="contact__lists">
+                  <ul class="contact__ul">
+                    <li class="contact__li">
+                      <button
+                        class="contact-email contact"
+                        value="uhj1993@naver.com"
+                      >
+                        <i class="far fa-envelope"></i>
+                        <div class="tooltip-content">
+                          <p>E-Mail</p>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="contact__li">
+                      <a
+                        href="https://jineecode.tistory.com/"
+                        target="_blank"
+                        class="contact"
+                      >
+                        <img src="/portfolio/img/tistory.png" alt="tech_blog" />
+                        <div class="tooltip-content">
+                          <p>BLOG</p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="contact__li">
+                      <a
+                        href="https://github.com/uhj1993"
+                        target="_blank"
+                        class="contact"
+                      >
+                        <img src="/portfolio/img/github.png" alt="github" />
+                        <div class="tooltip-content">
+                          <p>Git-Hub</p>
+                        </div></a
+                      >
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-          <!-- section 3 end -->
+        <!-- section 3 end -->
       </section>
     </div>
+
     <!-- jquery script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- fullpage javascript -->
-    <script type="text/javascript" src="./js/fullpage/vendors/scrolloverflow.js"></script>
-    <script src="./js/fullpage/fullpage.js"></script>
-    <script src="./js/fullpage/Initialization.js"></script>
-    <!-- swiper javascript -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/swiper/swiper.js"></script>
+    <!-- fullpage javascript cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js"></script>
+
+    <script src="/portfolio/js/fullpage/initialization.js"></script>
     <!-- custom javascript -->
-    <script src="./js/custom.js"></script>
+    <script src="/portfolio/js/custom.js"></script>
   </body>
 </html>
