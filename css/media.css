@@ -4,17 +4,18 @@
     width: 40%;
   }
 
-  .section .skills__left, .section .works__left, .section .contact__left {
-    width: 40%;
+  .section .skills__left,
+  .section .works__left,
+  .section .contact__left {
     padding: 6rem 2rem;
-  }
-
-  .skills__right, .works__right, .contact__right {
-    width: 60%;
   }
 
   .skills__left .skill__title {
     font-size: 50px;
+  }
+
+  .skill__container {
+    padding: 0;
   }
 
   /* WORK */
@@ -22,15 +23,14 @@
     font-size: 50px;
   }
 
-    .work-items .work-item {
+  .work-items .work-item {
     width: 50%;
   }
 
   /* contact */
-    .contact__title {
+  .contact__title {
     font-size: 50px;
   }
-
 }
 
 @media screen and (max-width: 1100px) {
@@ -39,11 +39,13 @@
     width: 60%;
   }
 
-  .skills, .works, .contacts {
+  .skills,
+  .works,
+  .contacts {
     flex-direction: column;
   }
 
-  .section .skills__left{
+  .section .skills__left {
     width: 100%;
     height: 40%;
     text-align: center;
@@ -57,20 +59,25 @@
   }
 
   .skill__container {
-   width: 100%;
-   padding: 0;
+    width: 100%;
+    padding: 0;
   }
 
   .skill-item {
     background: none;
   }
 
-  .sub-list, .skill__name {
-    font-size: 20px;
+  .skill__name {
+    margin-top: 10px;
+  }
+
+  .sub-list,
+  .skill__name {
+    font-size: 1rem;
   }
 
   /* work */
-  .section .works__left{
+  .section .works__left {
     width: 100%;
     height: 40%;
     text-align: center;
@@ -87,11 +94,9 @@
     display: none;
   }
 
-
-
   /* contact */
 
-  .section .contact__left{
+  .section .contact__left {
     width: 100%;
     height: 50%;
     text-align: center;
@@ -103,7 +108,6 @@
     height: 50%;
     padding: 0;
   }
-  
 }
 
 @media screen and (max-width: 950px) {
@@ -151,15 +155,23 @@
     font-size: 40px;
   }
 
-
-
   /* menu */
   .menu__container {
     width: 100%;
   }
 
+  /* skill */
+  .skill__container {
+    grid-template-columns: 3fr 7fr;
+  }
+
   /* work */
   .work-items .work-item {
+    width: 100%;
+  }
+
+  /* contact */
+  .contact__lists {
     width: 100%;
   }
 }
@@ -167,18 +179,22 @@
 @media screen and (max-width: 480px) {
   /* current */
   .skills__left .skill__title,
-  .work__title, .contact__title {
+  .work__title,
+  .contact__title {
     font-size: 36px;
   }
 
-  .skill__sub, .work__sub, .contact__sub {
+  .skill__sub,
+  .work__sub,
+  .contact__sub {
     font-size: 16px;
   }
 
-  .skill__p, .work__p, .contact__p {
+  .skill__p,
+  .work__p,
+  .contact__p {
     font-size: 13px;
   }
-
 
   /* home */
   .home__avartar {
@@ -191,9 +207,9 @@
   }
 
   /* profile */
-  .profile  {
+  .profile {
     display: none;
-  } 
+  }
 
   .about .fa-times,
   .menu .fa-times {
@@ -205,9 +221,10 @@
   }
 
   /* header */
-  .header .user i, .menu .fa-bars {
+  .header .user i,
+  .menu .fa-bars {
     font-size: 30px;
-}
+  }
 
   /* menu */
   .menu__container {
@@ -219,60 +236,65 @@
   }
 
   /* skill */
-.skill__container {
-  border: 1px solid;
-}
+  .skill__container {
+    border: 1px solid;
+  }
 
-.skill-item:nth-child(odd),
-.skill-item:nth-child(even){
-  grid-column: 1/3;
-}
+  .skill-item:nth-child(odd),
+  .skill-item:nth-child(even) {
+    grid-column: 1/3;
+  }
 
-.skill-item:nth-child(even){
-  background: rgba(0, 0, 0, 0.3);
-}
+  .skill-item:nth-child(even) {
+    background: rgba(0, 0, 0, 0.3);
+  }
 
-.sub-list, .skill__name {
+  .sub-list,
+  .skill__name {
     font-size: 16px;
-}
+  }
 
-/* work */
-.work-btns ul {
-  display: block;
-}
+  /* work */
+  .work-btns ul {
+    display: block;
+  }
 
-.section .works__right {
-  padding: 1rem 0;
-}
+  .section .works__right {
+    padding: 1rem 0;
+  }
 
-.work-btns .work-btn {
-  font-size: 16px;
-}
+  .work-btns .work-btn {
+    font-size: 16px;
+  }
 
-.work-itembox {
-  flex-direction: column;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #fdfdfd;
-}
+  .work-itembox {
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fdfdfd;
+  }
 
-.project__description {
-  position:static;
-  transform: none;
-  opacity: 1;
-  display: block;
-}
+  .project__description {
+    position: static;
+    transform: none;
+    opacity: 1;
+    display: block;
+  }
 
-.project__link {
-  justify-content: space-around;
-}
+  .work-item:hover .overlay {
+    opacity: 0;
+  }
 
-/* contact */
-  .contact_list {
+  .project__link {
+    justify-content: space-around;
+  }
+
+  /* contact */
+  .contact__lists {
     width: 100%;
   }
 
   .contact__ul {
-    justify-content: space-around;  
+    justify-content: space-around;
   }
 
   .contact__ul li {
