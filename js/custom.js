@@ -41,16 +41,12 @@ const userIcon=document.querySelector(".user");
 const aboutModal = document.querySelector(".about");
 const aboutTimes = document.querySelector(".about_times");
 
+
 // open
 userIcon.addEventListener("click", (e) => {
   e.stopPropagation();
   aboutModal.classList.add("show");
 });
-
-// skills click NOT close
-// aboutModal.addEventListener("click", (e) => {
-//   e.stopPropagation();
-// });
 
 // times close x
 aboutTimes.addEventListener("click", (e) => {
@@ -81,7 +77,6 @@ workBtnContainer.addEventListener('click', (e) => {
     if (filter == null) {
         return;
     }
-    // projectContainer.classList.add('active');
 
     setTimeout(() => {
         projects.forEach((project) => {
@@ -91,11 +86,10 @@ workBtnContainer.addEventListener('click', (e) => {
               project.classList.add('invisible');
             }
         });
-        // projectContainer.classList.remove('active');
     }, 300);
 
 });
 
 console.log(
-    "%c즐거운 시간 보내세요", 
+    "%c코드를 구경해보세요.", 
 "background-color:#0657a2; color: #fff; font-weight:bold; font-size:10px; padding: 4px;");
