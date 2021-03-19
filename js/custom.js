@@ -90,6 +90,13 @@ workBtnContainer.addEventListener('click', (e) => {
 
 });
 
+// loading
+window.onload = function(){
+  const loading = document.querySelector('.loader-wrapper')
+  loading.classList.add("hidden");
+}
+
+
 console.log(
     "%c코드를 구경해보세요.", 
 "background-color:#0657a2; color: #fff; font-weight:bold; font-size:10px; padding: 4px;");
