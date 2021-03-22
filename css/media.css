@@ -270,7 +270,6 @@
   .work-itembox {
     flex-direction: column;
     padding-bottom: 10px;
-    border-bottom: 1px solid #fdfdfd;
   }
 
   .project__description {
@@ -282,6 +281,11 @@
 
   .work-item:hover .overlay {
     opacity: 0;
+  }
+
+  .project__title,
+  .project__p {
+    color: #20353f;
   }
 
   .project__link {
