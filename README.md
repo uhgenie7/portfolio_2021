@@ -3,6 +3,12 @@
 #### _2021년 상반기에 작업한 포트폴리오 웹사이트_
 ![portfolio2021](https://user-images.githubusercontent.com/72803184/111574145-40430680-87ef-11eb-87ab-fe71b535f564.gif)
 
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-323330?style=flat-square&logo=HTML5&logoColor=E34F26" height="24" />
+  <img src="https://img.shields.io/badge/CSS3-323330?style=flat-square&logo=CSS3&logoColor=1572B6" height="24" />
+  <img src="https://img.shields.io/badge/Javascript-323330?style=flat-square&logo=JavaScript&logoColor=f0db4f" height="24" />
+</p>
+
 2021년 상반기에 작업한 포트폴리오 웹사이트입니다. Window 10 테마를 기반으로 하였고 스크롤 간편성과 가독성을 위해 fullpage.js 플러그인을 사용했습니다. (모바일 버전에서는 fullpage.js 기능을 숨김.)
 
 ## 사이트
