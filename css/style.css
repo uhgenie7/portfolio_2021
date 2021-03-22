@@ -54,6 +54,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 3rem;
+  background: #20353f;
 }
 
 .header .fas {
@@ -227,13 +228,13 @@ body {
 .section .works__left,
 .section .contact__left {
   width: 30%;
-  height: 100%;
+  height: 100vh;
   padding: 6rem 3rem;
   text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.3);
+  background: #043d71;
 }
 
 .skill__title,
