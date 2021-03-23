@@ -8,7 +8,7 @@ $("#fullpage").fullpage({
           navigationPosition: "right",
           scrollOverflow: false,
           bigSectionsDestination: top,
-          responsiveWidth: 1100,
+          responsiveWidth: 1480,
           responsiveHeight: 850,
           //adding the action to the button
           onLeave: function (index, nextIndex, direction) {
