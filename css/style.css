@@ -78,6 +78,7 @@ body {
   justify-content: center;
   flex-direction: column;
   color: #fdfdfd;
+  z-index: 1;
 }
 
 .home__section .home__title {
