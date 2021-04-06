@@ -32,17 +32,24 @@ http://uhj1993.dothome.co.kr/portfolio/
 - [JavaScript] 
 - [JQuery] (fullpage.js를 위해서만 사용)
 
+## WBS
+
+프로젝트를 효율적으로 진행하기 위해 업무 일정을 계획하고 관리한 문서입니다.
+
+[WBS](https://docs.google.com/spreadsheets/d/e/2PACX-1vQNudwcccRyeYI3Q5Lr230O8ye4ajJwasOReaZoQSrarAHqmYW0d6YHPFjNqOV_ycJ5SNlx6qUFZYu3/pubhtml)
+
 
 ## 네이밍 룰
 
 [네이밍 룰 링크](https://docs.google.com/spreadsheets/d/e/2PACX-1vRfQEsZDFN1LQc1NQQQeWbZ2H5f-T7uAzI-FkWEEkMzW3Lgl2iVxobN0-6vB-it_yuOlwNS0BvaFv5Y/pubhtml)
 
+
 ## 스토리보드
 
 [스토리보드 google presentation 링크](https://docs.google.com/presentation/d/e/2PACX-1vT7WK8f60gXB9RMnpP3RPR5MXlZc3edalvZOgKItcrmsosQSu0aOS3uQ-AgyeSSW-znbrCrx5yh3oru/pub?start=false&loop=false&delayms=3000)
 
-## 플러그인
 
+## 플러그인
 
 이 사이트를 만드는데 쓰인 플러그인은 다음과 같습니다.
 
