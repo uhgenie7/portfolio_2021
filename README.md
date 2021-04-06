@@ -36,7 +36,7 @@ http://uhj1993.dothome.co.kr/portfolio/
 
 프로젝트를 효율적으로 진행하기 위해 업무 일정을 계획하고 관리한 문서입니다.
 
-[WBS](https://docs.google.com/spreadsheets/d/e/2PACX-1vQNudwcccRyeYI3Q5Lr230O8ye4ajJwasOReaZoQSrarAHqmYW0d6YHPFjNqOV_ycJ5SNlx6qUFZYu3/pubhtml)
+[WBS](https://docs.google.com/spreadsheets/d/e/2PACX-1vR71oWku2TE1K9M7kaqB681l4__3AYrjH1nBGyMUy7nlP0iodghhDyMrlDKDZRQMZf_em8CotyMQozJ/pubhtml)
 
 
 ## 네이밍 룰
